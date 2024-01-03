@@ -61,6 +61,12 @@ export default function AdditionalDetails() {
                      <input className="form-control border-dark" id="pin" placeholder=""/>
                    </div>
                </div>
+               <div className="row mb-3">
+               <label htmlFor="pin" className="col-sm-4 col-form-label"><b>Account Details:</b></label>
+                   <div className="col-sm-7">
+                     <input className="form-control border-dark" id="pin" placeholder=""/>
+                   </div>
+               </div>
   
             </div>
         </div> 
