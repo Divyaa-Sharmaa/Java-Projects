@@ -52,7 +52,13 @@ export default function AdditionalDetails() {
                <div className="row mb-3">
                <label htmlFor="cardnum" className="col-sm-4 col-form-label"><b>Card number:</b></label>
                    <div className="col-sm-7">
-                     <input type="cardnum" className="form-control border-dark" id="cardnum" placeholder=""/>
+                     <input className="form-control border-dark" id="cardnum" placeholder=""/>
+                   </div>
+               </div>
+               <div className="row mb-3">
+               <label htmlFor="pin" className="col-sm-4 col-form-label"><b>PIN:</b></label>
+                   <div className="col-sm-7">
+                     <input className="form-control border-dark" id="pin" placeholder=""/>
                    </div>
                </div>
   
