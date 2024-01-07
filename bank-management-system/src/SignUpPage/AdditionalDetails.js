@@ -1,6 +1,6 @@
 import React from 'react'
 import bank_icon from '../Images/bank-icon2.jpg';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function AdditionalDetails() {
   return (
@@ -12,21 +12,14 @@ export default function AdditionalDetails() {
                      <img src={bank_icon} className='img-fluid' alt="Bank"/>
                   </div>
                   <div className='col'>
-                      <h3>Page 1: Account Details</h3>
+                      <h4>Account Details</h4>
                     </div> 
                </div><br/>
                <div className="row mb-3">
-                   <label htmlFor="citizen" className="col-sm-4 col-form-label"><b>Senior Citizen:</b></label>
-                   <div className="col-sm-6">
-                     <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="citizen" id="yes" value="yes" />
-                       <label className="form-check-label" htmlFor="yes">Yes</label>
-                     </div>
-                     <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="citizen" id="no" value="no" />
-                       <label className="form-check-label" htmlFor="no">No</label>
-                     </div>
-                 </div> 
+                   <label htmlFor="aadhar" className="col-sm-4 col-form-label"><b>Aadhar number:</b></label>
+                   <div className="col-sm-7">
+                     <input className="form-control border-dark" id="aadhar" placeholder="XXXX-XXXX-XXXX"/>       
+                   </div>
                </div>
                <div className="row mb-3">
                    <label htmlFor="accountType" className="col-sm-4 col-form-label"><b>Account type:</b></label>
@@ -51,7 +44,6 @@ export default function AdditionalDetails() {
                </div>
                <div className="row mb-3">
                <label htmlFor="cardnum" className="col-sm-4 col-form-label"><b>Card number:</b> <div><h6><i>Your 16 Digit Card number</i></h6></div></label>
-               
                    <div className="col-sm-7">
                      <input className="form-control border-dark" id="cardnum" placeholder="XXXX-XXXX-XXXX-6785"/>       
                    </div>
@@ -62,9 +54,9 @@ export default function AdditionalDetails() {
                      <input className="form-control border-dark" id="pin" placeholder="XXXX"/>
                    </div>
                </div>
-               <div className="row mb-3">
-               <label htmlFor="services" className="col-sm-4 col-form-label"><b>Services Required:</b></label>
-               <div className="col-sm-8">
+                <div className="row mb-3">
+                   <label htmlFor="services" className="col-sm-4 col-form-label"><b>Services Required:</b></label>
+                   <div className="col-sm-8">
                      <div className="form-check form-check-inline">
                        <input className="form-check-input" type="checkbox" name="atm_card" id="atm_card" value="atm_card" />
                        <label className="form-check-label" htmlFor="atm_card">ATM Card</label>
@@ -89,9 +81,20 @@ export default function AdditionalDetails() {
                        <input className="form-check-input" type="checkbox" name="" id="statement" value="" />
                        <label className="form-check-label" htmlFor="statement">Statement</label>
                      </div>
-               </div>
-            </div>
-            </div>
+                    </div>
+                </div>
+                <div className='form-check'>
+                    <input className="form-check-input" type="checkbox" name="" id="statement" value=""/>
+                    <label className="form-check-label" type="checkbox"> 
+                  I hereby declare that above entered details are correct to the best of my knowledge.
+                    </label>
+                </div> <br/>
+                <div class="d-grid gap-2 d-md-block">
+                   <Link className="btn btn-dark mx-2 " to={"/signup"}>Back</Link>
+                   <Link className="btn btn-dark mx-2 " >Submit</Link>
+                   <Link className="btn btn-dark mx-2 " to={"/"}>Cancel</Link> 
+                </div>
+              </div>      
         </div> 
     </div>             
   )
