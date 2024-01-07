@@ -29,7 +29,7 @@ export default function SignUp() {
   const onClick = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:8080/banker",banker)
-    // navigate("/additionalDetails");
+    navigate("/additionalDetails");
 }
 
   return (
@@ -98,12 +98,12 @@ export default function SignUp() {
                    <label htmlFor="status" className="col-sm-4 col-form-label"><b>Marital Status:</b></label>
                    <div className="col-sm-7">
                      <div className="form-check form-check-inline">
-                       <input  className="form-check-input" type="radio" name="marital_status" id="married" 
+                       <input  className="form-check-input" type="radio" name="status" id="married" 
                        value={marital_status} onChange={(e) => {onInputChange(e)}}/>
                        <label className="form-check-label" htmlFor="married">Married</label>
                      </div>
                      <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="marital_status" id="unmarried"
+                       <input className="form-check-input" type="radio" name="status" id="unmarried"
                         value={marital_status} onChange={(e) => {onInputChange(e)}}/>
                        <label className="form-check-label" htmlFor="unmarried">Unmarried</label>
                      </div>
@@ -142,7 +142,7 @@ export default function SignUp() {
                       id="pin" placeholder="" onChange={(e) => {onInputChange(e)}}/>
                    </div>
                 </div>   
-                <Link onClick={onClick} className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link>
+                <Link className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link>
                 </form>
             </div>
         </div>       

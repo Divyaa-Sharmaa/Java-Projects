@@ -32,42 +32,65 @@ export default function AdditionalDetails() {
                    <label htmlFor="accountType" className="col-sm-4 col-form-label"><b>Account type:</b></label>
                    <div className="col-sm-7">
                      <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="accountType" id="accountType" value="accountType" />
-                       <label className="form-check-label" htmlFor="accountType">Saving Account</label>
+                       <input className="form-check-input" type="radio" name="accountType" id="savingAccount" value="" />
+                       <label className="form-check-label" htmlFor="savingAccount">Saving Account</label>
                      </div>
                      <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="accountType" id="accountType" value="accountType" />
-                       <label className="form-check-label" htmlFor="accountType">Salary Account</label>
+                       <input className="form-check-input" type="radio" name="accountType" id="salaryAccount" value="" />
+                       <label className="form-check-label" htmlFor="salaryAccount">Salary Account</label>
                      </div>
                      <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="accountType" id="accountType" value="accountType" />
-                       <label className="form-check-label" htmlFor="accountType">Fixed Deposit Account</label>
+                       <input className="form-check-input" type="radio" name="accountType" id="FD" value="" />
+                       <label className="form-check-label" htmlFor="FD">Fixed Deposit Account</label>
                      </div>
                      <div className="form-check form-check-inline">
-                       <input className="form-check-input" type="radio" name="accountType" id="accountType" value="accountType" />
-                       <label className="form-check-label" htmlFor="accountType">Other</label>
+                       <input className="form-check-input" type="radio" name="accountType" id="other" value="" />
+                       <label className="form-check-label" htmlFor="other">Other</label>
                      </div>
                  </div> 
                </div>
                <div className="row mb-3">
-               <label htmlFor="cardnum" className="col-sm-4 col-form-label"><b>Card number:</b></label>
+               <label htmlFor="cardnum" className="col-sm-4 col-form-label"><b>Card number:</b> <div><h6><i>Your 16 Digit Card number</i></h6></div></label>
+               
                    <div className="col-sm-7">
-                     <input className="form-control border-dark" id="cardnum" placeholder=""/>
+                     <input className="form-control border-dark" id="cardnum" placeholder="XXXX-XXXX-XXXX-6785"/>       
                    </div>
                </div>
                <div className="row mb-3">
-               <label htmlFor="pin" className="col-sm-4 col-form-label"><b>PIN:</b></label>
+               <label htmlFor="pin" className="col-sm-4 col-form-label"><b>PIN:</b><div><h6><i>Your 4 Digit Pin</i></h6></div></label>
                    <div className="col-sm-7">
-                     <input className="form-control border-dark" id="pin" placeholder=""/>
+                     <input className="form-control border-dark" id="pin" placeholder="XXXX"/>
                    </div>
                </div>
                <div className="row mb-3">
-               <label htmlFor="pin" className="col-sm-4 col-form-label"><b>Account Details:</b></label>
-                   <div className="col-sm-7">
-                     <input className="form-control border-dark" id="pin" placeholder=""/>
-                   </div>
+               <label htmlFor="services" className="col-sm-4 col-form-label"><b>Services Required:</b></label>
+               <div className="col-sm-8">
+                     <div className="form-check form-check-inline">
+                       <input className="form-check-input" type="checkbox" name="atm_card" id="atm_card" value="atm_card" />
+                       <label className="form-check-label" htmlFor="atm_card">ATM Card</label>
+                     </div>
+                     <div className="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                     <label class="form-check-label" for="flexCheckDefault">Internet Banking</label>         
+                     </div>
+                     <div className="form-check form-check-inline">
+                       <input className="form-check-input" type="checkbox" name="" id="mobileBanking" value="" />
+                       <label className="form-check-label" htmlFor="mobileBanking">Mobile Banking</label>
+                     </div>
+                     <div className="form-check form-check-inline">
+                       <input className="form-check-input" type="checkbox" name="" id="alerts" value="" />
+                       <label className="form-check-label" htmlFor="alerts">Email & SMS Alerts</label>
+                     </div>
+                     <div className="form-check form-check-inline">
+                       <input className="form-check-input" type="checkbox" name="" id="chequeBook" value="" />
+                       <label className="form-check-label" htmlFor="chequeBook">Cheque Book</label>
+                     </div>
+                     <div className="form-check form-check-inline">
+                       <input className="form-check-input" type="checkbox" name="" id="statement" value="" />
+                       <label className="form-check-label" htmlFor="statement">Statement</label>
+                     </div>
                </div>
-  
+            </div>
             </div>
         </div> 
     </div>             
