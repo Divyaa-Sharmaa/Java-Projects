@@ -142,7 +142,7 @@ export default function SignUp() {
                       id="pin" placeholder="" onChange={(e) => {onInputChange(e)}}/>
                    </div>
                 </div>   
-                <Link className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link>
+                <Link onClick={onClick} className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link>
                 </form>
             </div>
         </div>       
