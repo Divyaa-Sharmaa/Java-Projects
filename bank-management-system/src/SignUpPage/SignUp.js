@@ -28,7 +28,7 @@ export default function SignUp() {
 
   const onClick = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/signup",banker)
+    await axios.post("http://localhost:8080/api/signup/signUp",banker)
     navigate("/additionalDetails");
 }
 
@@ -47,14 +47,14 @@ export default function SignUp() {
               </div><br/>
               <form>
                 <div className="row mb-3">
-                   <label for="name" className="col-sm-4 col-form-label"><b>Name:</b></label>
+                   <label htmlFor="name" className="col-sm-4 col-form-label"><b>Name:</b></label>
                    <div className="col-sm-7">
                      <input name="name" type="name" className="form-control border-dark" 
                      id="name" value={name} onChange={(e) => {onInputChange(e)}} placeholder=""/>
                    </div>
                 </div>
                 <div className="row mb-3">
-                   <label for="Fname" className="col-sm-4 col-form-label"><b>Father's Name:</b></label>
+                   <label htmlFor="Fname" className="col-sm-4 col-form-label"><b>Father's Name:</b></label>
                    <div className="col-sm-7">
                      <input name='father_name' type="Fname" className="form-control border-dark" 
                      value={father_name} id="Fname" placeholder="" onChange={(e) => {onInputChange(e)}}/>
@@ -142,7 +142,9 @@ export default function SignUp() {
                       id="pin" placeholder="" onChange={(e) => {onInputChange(e)}}/>
                    </div>
                 </div>   
-                <Link onClick={onClick} className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link>
+                {/* <Link onClick={onClick} className="btn btn-dark float-end" to={"/additionalDetails"}>Next Page</Link> */}
+                <button onClick={onClick} className="btn btn-dark float-mid" >Back</button>
+                <button onClick={onClick} className="btn btn-dark float-mid mx-2" >Next</button>
                 </form>
             </div>
         </div>       

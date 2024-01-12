@@ -19,12 +19,13 @@ export default function AdditionalDetails() {
   const {aadhar,accountType,cardNo,pinNo, facilities} = accountDetails;
 
   const onInputChange = (e) => {
+    e.preventDefault();
     setAccountDetails({...accountDetails,[e.target.name]:e.target.value})
   }
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/accountDetails",accountDetails)
+    await axios.post("http://localhost:8080/api/signup/accountDetails",accountDetails)
     navigate("/");
 }
 
@@ -128,11 +129,11 @@ export default function AdditionalDetails() {
                     <label className="form-check-label" type="checkbox"> 
                   I hereby declare that above entered details are correct to the best of my knowledge.
                     </label>
-                </div> <br/>
-                <div class="d-grid gap-2 d-md-block">
+                </div> <br/>  
+                   <div class="d-grid gap-2 d-md-block">
                    <Link className="btn btn-dark mx-2 " to={"/signup"}>Back</Link>
-                   <Link className="btn btn-dark mx-2 " to={"/"}>Submit</Link>
-                   <Link className="btn btn-dark mx-2 " to={"/"}>Cancel</Link> 
+                   <button className="btn btn-dark mx-2 " >Submit</button>
+                   <button className="btn btn-dark mx-2 " >Cancel</button>                    
                 </div>
               </div>      
         </div> 

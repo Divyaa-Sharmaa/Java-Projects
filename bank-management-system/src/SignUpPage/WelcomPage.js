@@ -4,19 +4,21 @@ import { Link } from 'react-router-dom';
 
 
 export default function WelcomPage() {
-  const[msg, setMsg] = useState();
+  // const[msg, setMsg] = useState();
+  const[cardNum, setCardNum] = useState('');
+  const[pin, setPin] = useState('');
 
-  const handleChange = (e)=>{
-    setMsg(e.target.value);
-  }
-
-  // useEffect(() => {
+  // const handleChange = (e)=>{
+  //   e.preventDefault();
+  //   setCardNum(e.target.value);
     
-  // }, [])
-  
+  // }
 
-  const handleClick = () =>{
-    setMsg('');
+  const handleClick = (e) =>{
+    // window.location.reload(false);
+    e.preventDefault();
+    setCardNum('')
+    setPin('')
   }
 
   return (
@@ -27,20 +29,20 @@ export default function WelcomPage() {
                 <h2 className='text-center m-1'>Welcome to ATM Machine</h2><br/>
                 <form>
                 <div className="row mb-4">
-                   <label for="Number" className="col-sm-4 col-form-label"><b>Card No:</b></label>
+                   <label htmlFor="cardNum" className="col-sm-4 col-form-label"><b>Card No:</b></label>
                    <div className="col-sm-7">
-                     <input type="number" onChange={handleChange} className="form-control border-dark" id="Number" placeholder=""/>
+                     <input type="number" onChange={(e) => setCardNum(e.target.value)} className="form-control border-dark" value={cardNum} id="cardNum" placeholder=""/>
                    </div>
                 </div>
                 <div className="row mb-3">
-                   <label for="pin" className="col-sm-4 col-form-label"><b>PIN:</b></label>
+                   <label htmlFor="pin" className="col-sm-4 col-form-label"><b>PIN:</b></label>
                    <div className="col-sm-7">
-                     <input type="password" onChange={handleChange} className="form-control border-dark" id="pin" placeholder=""/>
+                     <input type="password" onChange={(e) => setPin(e.target.value)} className="form-control border-dark" id="pin" value={pin} placeholder=""/>
                    </div>
                 </div> <br/>
-                <div class="d-grid gap-2 d-md-block">
+                <div className="d-grid gap-2 d-md-block">
                     <button type="submit" className="btn btn-outline-dark">Sign In</button>
-                    <button onClick={handleClick} className="btn btn-outline-dark mx-2 "> Clear </button>
+                    <button onClick={ handleClick} className="btn btn-outline-dark mx-2 "> Clear </button>
                 </div><br></br>
                 <div className="d-grid gap-2 col-sm-6 mx-auto">
                 <Link type="submit" className="btn btn-outline-dark mx-2" to={"/signup"}>Sign Up</Link>
