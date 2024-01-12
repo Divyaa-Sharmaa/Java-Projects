@@ -28,7 +28,7 @@ export default function SignUp() {
 
   const onClick = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8080/banker",banker)
+    await axios.post("http://localhost:8080/signup",banker)
     navigate("/additionalDetails");
 }
 
