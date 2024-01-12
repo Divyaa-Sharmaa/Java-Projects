@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bank_icon from '../Images/bank-icon.jpg';
 import { Link } from 'react-router-dom';
 
@@ -9,6 +9,11 @@ export default function WelcomPage() {
   const handleChange = (e)=>{
     setMsg(e.target.value);
   }
+
+  // useEffect(() => {
+    
+  // }, [])
+  
 
   const handleClick = () =>{
     setMsg('');
