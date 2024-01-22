@@ -21,7 +21,6 @@ export default function Login() {
     alignItems: "center"
   };
 
-
   return (
 
     <div className='image-container'>
@@ -32,12 +31,12 @@ export default function Login() {
         {/* </div> */}
         <h6 className='image-text'>Select your transactions</h6>
         <div style={{ ...childStyle, justifyContent: "flex-end" }}>
-          <Link className='login-btn btnn' target="_blank">Statement</Link>
+          <Link to={"/Statement"} className='login-btn btnn' target="_blank">Statement</Link>
           <Link to={"/Deposit"} className='login-btn btn_1'>Deposit</Link>
-          <Link className='login-btn btn_2'>Cash withdrawl</Link>
-          <Link className='login-btn btn_3'>Balance Enquiry</Link>
-          <Link className='login-btn btn_4'>Fast Cash</Link>
-          <Link className='login-btn btn_5'>Pin Change</Link>
+          <Link to={"/Withdraw"} className='login-btn btn_2'>Cash withdrawl</Link>
+          <Link to={"/balanceEnquiry"} className='login-btn btn_3'>Balance Enquiry</Link>
+          <Link to={"/FastCash"} className='login-btn btn_4'>Fast Cash</Link>
+          <Link to={"/ChangePin"} className='login-btn btn_5'>Pin Change</Link>
           <Link className='login-btn btn_6'>Exit</Link>
         </div>
       </div>

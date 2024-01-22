@@ -56,10 +56,8 @@ code {
 
 .login-btn {
   position: absolute;
-  ;
   transform: translate(-60%, -85%);
-  background-color: rgb(155, 203, 203);
-  /* border:none; */
+  background-color: rgb(208, 212, 212);
   color: black;
   border-radius: .3em;
   text-decoration: none;
@@ -68,19 +66,19 @@ code {
 }
 
 .btnn{
-  top: 54%;
+  top: 53.7%;
   left: 52%;
   width: 7rem;
-  height: 1.3rem;
+  height: 1.2rem;
   line-height: 1.2rem;
 }
 
 .login-btn:hover {
-  color:azure;
+  color: green;
 }
 
 .btn_1 {
-  top: 48.6%;
+  top: 48%;
   left: 22%;
   transform: translate(-50%, -50%);
   width: 6.5rem;
@@ -95,50 +93,72 @@ code {
   line-height: 1.1rem;
 }
 .btn_2 {
-  top: 58.5%;
-  left: 24%;
+  top: 58.2%;
+  left: 25%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
   
 }
 .btn_3 {
-  top: 58.5%;
+  top: 58.2%;
   left: 52%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
   
 }
 .btn_31 {
-  top: 35%;
-  left: 44%;
+  position: absolute;
+  top: 31%;
+  left: 21%;
   width: 12rem;
   height: 1.6rem;
+  background-color: white;
+  cursor: text;
+  border-radius: .4rem;
 }
+.btn_pin {
+  position: absolute;
+  top: 38%;
+  left: 21%;
+  width: 12rem;
+  height: 1.6rem;
+  background-color: white;
+  cursor: text;
+  border-radius: .4rem;
+}
+
 .btn_32 {
   top: 58.5%;
   left: 54%;
   width: 6.5rem;
   height: 1.3rem;
   line-height: 1.2rem;
+  border: 2rem;
 }
 .btn_4 {
-  top: 50%;
-  left: 52%;
-  width: 7rem;
-  height: 1.3rem;
-  line-height: 1.2rem;
-}
-.btn_5 {
-  top: 54%;
-  left: 24%;
-  width: 6.6rem;
-  height: 1.3rem;
-  line-height: 1.2rem;
-}
-.btn_6 {
-  top: 46%;
+  top: 49.5%;
   left: 52%;
   width: 7rem;
   height: 1.2rem;
   line-height: 1.2rem;
 }
-/* //57 50*/
+.btn_5 {
+  top: 53.8%;
+  left: 24.5%;
+  width: 6.6rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.btn_6 {
+  top: 45.4%;
+  left: 52%;
+  width: 7rem;
+  height: 1.3rem;
+  line-height: 1.2rem;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 

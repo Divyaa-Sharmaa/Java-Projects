@@ -1,45 +1,14 @@
 import React, { useEffect, useState } from "react";
 import bank_icon from "../Images/bank-icon.jpg";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { Link, useNavigate, useParams } from "react-router-dom";
+// import axios from "axios";
+// import Login from "../LoginPage/Login";
 
 export default function WelcomPage() {
-  const [cardNum, setCardNum] = useState("");
-  const [pin, setPin] = useState("");
-
+  const [card_no, setCardNum] = useState("");
+  const [pin_no, setPin] = useState("");
   const navigate = useNavigate();
-  const handleClick = (e) => {
-    // window.location.reload(false);
-    e.preventDefault();
-    setCardNum("");
-    setPin("");
-  };
-  // const [cardNumber, setCardNumber] = useState('');
-  //   const [pinNo, setPinNo] = useState('');
-  //   const [loginMessage, setLoginMessage] = useState('');
-
-    const handleLogin = async () => {
-    //     try {
-    //         const response = await fetch(`http://localhost:8080/api/login?card_no=${cardNumber}&pin_no=${pinNo}`);
-    //         if (response.ok) {
-    //             setLoginMessage('Login successful!');
-                navigate('/Login');
-    //             console.log("login here....");
-    //         } else {
-    //             setLoginMessage('Login failed. Please check your card number and PIN.');
-    //             console.log("hello we are there....");
-            }
-    //     } catch (error) {
-    //         console.error('Error during login:', error);
-    //     }
-    // };
-  // const loadUser = async () => {
-  //   const result = await axios.get(
-  //     ``
-  //   );
-  //   setUser(result.data);
-  // };
-
+  
   return (
     <div className="container">
       <div className="row">
@@ -47,6 +16,7 @@ export default function WelcomPage() {
           <img src={bank_icon} className="img-fluid" alt="Bank" />
           <h2 className="text-center m-1">Welcome to ATM Machine</h2>
           <br />
+        
           <form>
             <div className="row mb-4">
               <label htmlFor="cardNum" className="col-sm-4 col-form-label">
@@ -55,10 +25,10 @@ export default function WelcomPage() {
               <div className="col-sm-7">
                 <input
                   type="number"
-                  name="Card No"
+                  name="card_no"
                   onChange={(e) => setCardNum(e.target.value)}
                   className="form-control border-dark"
-                  value={cardNum}
+                  value={card_no}
                   id="cardNum"
                   placeholder=""
                 />
@@ -71,11 +41,11 @@ export default function WelcomPage() {
               <div className="col-sm-7">
                 <input
                   type="password"
-                  name="PIN"
+                  name="pin_no"
                   onChange={(e) => setPin(e.target.value)}
                   className="form-control border-dark"
                   id="pin"
-                  value={pin}
+                  value={pin_no}
                   placeholder=""
                 />
               </div>
@@ -89,9 +59,10 @@ export default function WelcomPage() {
               >
                 Sign In
               </Link>
-              {/* <button onClick={handleLogin} className="btn btn-outline-dark">Login</button> */}
+              {/* <button className="btn btn-outline-dark">Login</button> */}
+              {/* {errorMsg && <div>{errorMsg}</div>} */}
               <button
-                onClick={handleClick}
+                // onClick={handleClick} onClick={handleLogin}
                 className="btn btn-outline-dark mx-2 "
               >
                 {" "}

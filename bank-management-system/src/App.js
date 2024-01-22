@@ -5,7 +5,12 @@ import AdditionalDetails from './SignUpPage/AdditionalDetails';
 import SignUp from './SignUpPage/SignUp';
 import WelcomPage from './SignUpPage/WelcomPage';
 import Deposit from './Frames/Deposit';
+import Withdraw from './Frames/Withdraw';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import FastCash from './Frames/FastCash';
+import ChangePin from './Frames/ChangePin';
+import BalanceEnquiry from './Frames/BalanceEnquiry';
+import Statement from './Frames/Statement';
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
           <Route path="/signup" element={<SignUp />}/>
           <Route path="/additionalDetails" element={<AdditionalDetails />}/>
           <Route path="/Deposit" element={<Deposit />}/>        
+          <Route path="/Withdraw" element={<Withdraw />}/>        
+          <Route path="/FastCash" element={<FastCash />}/>        
+          <Route path="/ChangePin" element={<ChangePin />}/>        
+          <Route path="/balanceEnquiry" element={<BalanceEnquiry />}/>        
+          <Route path="/Statement" element={<Statement />}/>        
         </Routes>
       </Router>
       
