@@ -1,0 +1,166 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  position: absolute;
+  margin: .1em;
+  width: 20vw;
+  height: 5vh;
+  padding: .2em .1em;
+  /* padding-block: 0.7rem; */
+  /* text-indent: 0.8rem; */
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.image-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  position: relative;
+}
+
+.image {
+  width: 80vw;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 6.8rem;
+  top: 8rem;
+}
+
+.login-btn {
+  position: absolute;
+  transform: translate(-60%, -85%);
+  background-color: rgb(208, 212, 212);
+  color: black;
+  border-radius: .3em;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnn{
+  top: 53.7%;
+  left: 52%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.login-btn:hover {
+  color: green;
+}
+
+.btn_1 {
+  top: 48%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  width: 6.5rem;
+  height: 1.3rem;
+  line-height: 1.1rem;
+}
+.btn1{
+  top: 54%;
+  left: 54%;
+  width: 6.5rem;
+  height: 1.3rem;
+  line-height: 1.1rem;
+}
+.btn_2 {
+  top: 58.2%;
+  left: 25%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  
+}
+.btn_3 {
+  top: 58.2%;
+  left: 52%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  
+}
+.btn_31 {
+  position: absolute;
+  top: 31%;
+  left: 21%;
+  width: 12rem;
+  height: 1.6rem;
+  background-color: white;
+  cursor: text;
+  border-radius: .4rem;
+}
+.btn_pin {
+  position: absolute;
+  top: 38%;
+  left: 21%;
+  width: 12rem;
+  height: 1.6rem;
+  background-color: white;
+  cursor: text;
+  border-radius: .4rem;
+}
+
+.btn_32 {
+  top: 58.5%;
+  left: 54%;
+  width: 6.5rem;
+  height: 1.3rem;
+  line-height: 1.2rem;
+  border: 2rem;
+}
+.btn_4 {
+  top: 49.5%;
+  left: 52%;
+  width: 7rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.btn_5 {
+  top: 53.8%;
+  left: 24.5%;
+  width: 6.6rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+.btn_6 {
+  top: 45.4%;
+  left: 52%;
+  width: 7rem;
+  height: 1.3rem;
+  line-height: 1.2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
